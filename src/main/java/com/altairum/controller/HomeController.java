@@ -15,12 +15,12 @@ public class HomeController {
     @PreAuthorize("hasRole('ROLE_USER')")
     @GetMapping("/user")
     public String userPage() {
-        return "User page. Only authorize. Role USER";
+        return "User page. Only authorization. Role USER";
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/admin")
     public String adminPage() {
-        return "Admin page. Only authorize. Role ADMIN";
+        return "Admin page. Only authorizitaion. Role ADMIN";
     }
 }
