@@ -21,6 +21,6 @@ public class HomeController {
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/admin")
     public String adminPage() {
-        return "Admin page. Only authorizitaion. Role ADMIN";
+        return "Admin page. Only authorization. Role ADMIN";
     }
 }
